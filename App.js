@@ -1,25 +1,37 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image, Row, Col } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Hello, World!</Text>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-        <Text>Here is another line!</Text>
-      </View>
+  <View name="topApp" style={styles.coco}>
+      <View name="blankie" style={{height: 400}}></View>
+      <View name="container" style={{flex: 1, flexDirection: 'row'}}>
+          <View style={{width: 300}} name="leftie">
+            <Text style={styles.biggie}>FooBar</Text>
+            <TextInput style={styles.biggie} placeholder="foo"></TextInput>
+          </View>
+          <View style={{width: 50}} name="rightie">
+          <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+            style={{width: 40, height: 40}} />
+          </View>
+       </View>
+    </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  coco: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+
   },
+  biggie: {
+        fontSize: 60,
+        fontFamily: 'Courier',
+        color: 'green',
+  }
 });
