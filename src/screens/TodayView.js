@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 30,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   style: {
     position: "absolute",
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   r: {
     position: "absolute",
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   s: {
     position: "absolute",
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c: {
     position: "absolute",
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c1: {
     position: "absolute",
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c2: {
     position: "absolute",
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c3: {
     position: "absolute",
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c4: {
     position: "absolute",
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c5: {
     position: "absolute",
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c6: {
     position: "absolute",
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c7: {
     position: "absolute",
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c8: {
     position: "absolute",
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c9: {
     position: "absolute",
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c10: {
     position: "absolute",
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c11: {
     position: "absolute",
@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c12: {
     position: "absolute",
@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c13: {
     position: "absolute",
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c14: {
     position: "absolute",
@@ -238,7 +238,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c15: {
     position: "absolute",
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c16: {
     position: "absolute",
@@ -258,7 +258,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c17: {
     position: "absolute",
@@ -268,7 +268,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c18: {
     position: "absolute",
@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   c19: {
     position: "absolute",
@@ -288,7 +288,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 24,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   today: {
     position: "absolute",
@@ -300,7 +300,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic",
+    fontFamily: "ArialMT",
     textDecorationLine: "underline"
   },
   month: {
@@ -311,7 +311,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   week: {
     position: "absolute",
@@ -321,7 +321,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   year: {
     position: "absolute",
@@ -331,6 +331,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   }
 });

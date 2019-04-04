@@ -23,15 +23,15 @@ const styles = StyleSheet.create({
   },
   today: {
     position: "absolute",
-    top: "6.30%",
-    left: "22.93%",
-    height: "3.30%",
-    width: "10.40%",
+    top: "6.4%",
+    left: "18.27%",
+    height: "3.33%",
+    width: "15.33%",
     backgroundColor: "transparent",
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   month: {
     position: "absolute",
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   week: {
     position: "absolute",
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic",
+    fontFamily: "ArialMT",
     textDecorationLine: "underline"
   },
   year: {
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   style: {
     position: "absolute",
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   r: {
     position: "absolute",
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   s: {
     position: "absolute",
@@ -96,6 +96,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   }
 });

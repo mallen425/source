@@ -26,15 +26,15 @@ const styles = StyleSheet.create({
   },
   today: {
     position: "absolute",
-    top: "6.30%",
-    left: "22.93%",
-    height: "3.30%",
-    width: "10.40%",
+    top: "6.4%",
+    left: "19.25%",
+    height: "3.33%",
+    width: "14.35%",
     backgroundColor: "transparent",
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   month: {
     position: "absolute",
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic",
+    fontFamily: "ArialMT",
     textDecorationLine: "underline"
   },
   week: {
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   year: {
     position: "absolute",
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 16,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   },
   style: {
     position: "absolute",
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   r: {
     position: "absolute",
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   s: {
     position: "absolute",
@@ -99,18 +99,18 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 20,
-    fontFamily: "ShreeDev0714"
+    fontFamily: "ArialMT"
   },
   sEPTEMBER: {
     position: "absolute",
-    top: "12.59%",
-    left: "56.27%",
-    height: "82.31%",
-    width: "19.20%",
+    top: "14.54%",
+    left: "67.47%",
+    height: "100.3%",
+    width: "19.2%",
     backgroundColor: "transparent",
     textAlign: "center",
     color: "rgba(0,0,0,1)",
     fontSize: 45,
-    fontFamily: "ShreeDev0714-Italic"
+    fontFamily: "ArialMT"
   }
 });
