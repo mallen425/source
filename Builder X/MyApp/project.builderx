@@ -1,0 +1,20 @@
+{
+    "artboards": [
+        "/src/screens/YearView.js",
+        "/src/screens/MonthView.js",
+        "/src/screens/WeekView.js",
+        "/src/screens/TodayView.js"
+    ],
+    "symbols": [],
+    "assets": [],
+    "defaultArtboardDirectory": "/src/screens",
+    "defaultSymbolDirectory": "/src/symbols",
+    "defaultAssetDirectory": "/src/assets",
+    "deviceName": "iPhone 8",
+    "deviceOrientation": "portrait",
+    "basePath": "/Users/joshuaallen/Documents/Source/PhoneApp/source/Builder X/MyApp",
+    "tempPath": "/var/folders/4c/btz5s0hx6ns__pw4pty93l_00000gn/T/BuilderqvDu2yJ",
+    "useStylesheet": true,
+    "rulers": {},
+    "missingFonts": []
+}
