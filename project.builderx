@@ -5,7 +5,9 @@
         "/src/screens/WeekView.js",
         "/src/screens/TodayView.js"
     ],
-    "symbols": [],
+    "symbols": [
+        "/src/symbols/DateNavigation.js"
+    ],
     "assets": [],
     "defaultArtboardDirectory": "/src/screens",
     "defaultSymbolDirectory": "/src/symbols",

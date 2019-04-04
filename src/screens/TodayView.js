@@ -1,14 +1,18 @@
 import React, { Component } from "react";
+import DateNavigation from "../symbols/DateNavigation";
+import { Center } from "@builderx/utils";
 import { View, Text, StyleSheet } from "react-native";
 
 export default class TodayView extends Component {
   render() {
+    const {navigate} = this.props.navigation;
+
     return (
       <View style={styles.root}>
-        <Text style={styles.goodMorning}>good morning!</Text>
+        <Text style={styles.greeting}>good morning!</Text>
         <Text style={styles.style}>?</Text>
         <Text style={styles.r}>R</Text>
-        <Text style={styles.s}>S</Text>
+        <Text style={styles.s} onPress={() => console.warn('foo')}>SSSSSSSSSSS</Text>
         <Text style={styles.c}>C</Text>
         <Text style={styles.c1}>C</Text>
         <Text style={styles.c2}>C</Text>
@@ -29,10 +33,9 @@ export default class TodayView extends Component {
         <Text style={styles.c17}>C</Text>
         <Text style={styles.c18}>C</Text>
         <Text style={styles.c19}>C</Text>
-        <Text style={styles.today}>today</Text>
-        <Text style={styles.month}>month</Text>
-        <Text style={styles.week}>week</Text>
-        <Text style={styles.year}>year</Text>
+        <Center horizontal>
+          <DateNavigation style={styles.dateNavigation} />
+        </Center>
       </View>
     );
   }
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     flex: 1
   },
-  goodMorning: {
+  greeting: {
     position: "absolute",
     top: "9.00%",
     left: "5.33%",
@@ -290,47 +293,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: "ArialMT"
   },
-  today: {
-    position: "absolute",
-    top: "19.49%",
-    left: "26.93%",
-    height: "3.30%",
-    width: "10.40%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 16,
-    fontFamily: "ArialMT",
-    textDecorationLine: "underline"
-  },
-  month: {
-    position: "absolute",
-    top: "19.49%",
-    left: "56.53%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 16,
-    fontFamily: "ArialMT"
-  },
-  week: {
-    position: "absolute",
-    top: "19.49%",
-    left: "41.87%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 16,
-    fontFamily: "ArialMT"
-  },
-  year: {
-    position: "absolute",
-    top: "19.49%",
-    left: "73.07%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 16,
-    fontFamily: "ArialMT"
+  dateNavigation: {
+    top: 124.5,
+    width: 217,
+    height: 27,
+    position: "absolute"
   }
 });

@@ -1,14 +1,12 @@
 import React, { Component } from "react";
+import DateNavigation from "../symbols/DateNavigation";
 import { View, Text, StyleSheet } from "react-native";
 
 export default class MonthView extends Component {
   render() {
     return (
       <View style={styles.root}>
-        <Text style={styles.today}>today</Text>
-        <Text style={styles.month}>month</Text>
-        <Text style={styles.week}>week</Text>
-        <Text style={styles.year}>year</Text>
+        <DateNavigation style={styles.dateNavigation} />
         <Text style={styles.style}>?</Text>
         <Text style={styles.r}>R</Text>
         <Text style={styles.s}>S</Text>
@@ -24,49 +22,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     flex: 1
   },
-  today: {
-    position: "absolute",
-    top: "6.4%",
-    left: "19.25%",
-    height: "3.33%",
-    width: "14.35%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 16,
-    fontFamily: "ArialMT"
-  },
-  month: {
-    position: "absolute",
-    top: "6.30%",
-    left: "52.53%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 16,
-    fontFamily: "ArialMT",
-    textDecorationLine: "underline"
-  },
-  week: {
-    position: "absolute",
-    top: "6.30%",
-    left: "37.87%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 16,
-    fontFamily: "ArialMT"
-  },
-  year: {
-    position: "absolute",
-    top: "6.30%",
-    left: "69.07%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 16,
-    fontFamily: "ArialMT"
-  },
+
   style: {
     position: "absolute",
     top: "7.95%",
@@ -112,5 +68,12 @@ const styles = StyleSheet.create({
     color: "rgba(0,0,0,1)",
     fontSize: 45,
     fontFamily: "ArialMT"
+  },
+  dateNavigation: {
+    position: "absolute",
+    top: 52,
+    left: 72,
+    height: 27,
+    width: 218
   }
 });

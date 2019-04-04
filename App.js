@@ -6,7 +6,7 @@ import MonthView from "./src/screens/MonthView";
 import WeekView from "./src/screens/WeekView";
 import TodayView from "./src/screens/TodayView";
 
-import { StackNavigator, DrawerNavigator } from "react-navigation";
+import { StackNavigator, DrawerNavigator, createAppContainer } from "react-navigation";
 const DrawerNavigation = DrawerNavigator({
   YearView: {
     screen: YearView
@@ -21,6 +21,8 @@ const DrawerNavigation = DrawerNavigator({
     screen: TodayView
   }
 });
+
+
 const StackNavigation = StackNavigator(
   {
     DrawerNavigation: {
@@ -58,7 +60,8 @@ export default class App extends React.Component {
   async componentDidMount() {
     await Font.loadAsync({
       "ShreeDev0714-Italic": require("./src/assets/fonts/Arial.ttf") /*Fallback Font*/,
-      ShreeDev0714: require("./src/assets/fonts/Arial.ttf") /*Fallback Font*/
+      ShreeDev0714: require("./src/assets/fonts/Arial.ttf") /*Fallback Font*/,
+      ArialMT: require("./src/assets/fonts/Arial.ttf")
     });
 
     this.setState({ fontLoaded: true });
@@ -68,3 +71,5 @@ export default class App extends React.Component {
     return this.state.fontLoaded ? <StackNavigation /> : <Expo.AppLoading />;
   }
 }
+
+
