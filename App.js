@@ -1,37 +1,70 @@
-import React from 'react';
-import { StyleSheet, Text, View, TextInput, Image, Row, Col } from 'react-native';
+import React from "react";
+import { YellowBox } from "react-native";
+import { Font } from "expo";
+import YearView from "./src/screens/YearView";
+import MonthView from "./src/screens/MonthView";
+import WeekView from "./src/screens/WeekView";
+import TodayView from "./src/screens/TodayView";
 
-export default class App extends React.Component {
-  render() {
-    return (
-  <View name="topApp" style={styles.coco}>
-      <View name="blankie" style={{height: 400}}></View>
-      <View name="container" style={{flex: 1, flexDirection: 'row'}}>
-          <View style={{width: 300}} name="leftie">
-            <Text style={styles.biggie}>Foo Bar</Text>
-            <TextInput style={styles.biggie} placeholder="foo"></TextInput>
-          </View>
-          <View style={{width: 50}} name="rightie">
-          <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
-            style={{width: 40, height: 40}} />
-          </View>
-       </View>
-    </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  coco: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-
+import { StackNavigator, DrawerNavigator } from "react-navigation";
+const DrawerNavigation = DrawerNavigator({
+  YearView: {
+    screen: YearView
   },
-  biggie: {
-        fontSize: 60,
-        fontFamily: 'Courier',
-        color: 'green',
+  MonthView: {
+    screen: MonthView
+  },
+  WeekView: {
+    screen: WeekView
+  },
+  TodayView: {
+    screen: TodayView
   }
 });
+const StackNavigation = StackNavigator(
+  {
+    DrawerNavigation: {
+      screen: DrawerNavigation
+    },
+    YearView: {
+      screen: YearView
+    },
+    MonthView: {
+      screen: MonthView
+    },
+    WeekView: {
+      screen: WeekView
+    },
+    TodayView: {
+      screen: TodayView
+    }
+  },
+  {
+    headerMode: "none"
+  }
+);
+export default class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      fontLoaded: false
+    };
+    YellowBox.ignoreWarnings([
+      "Warning: componentWillMount is deprecated",
+      "Warning: componentWillReceiveProps is deprecated",
+      "Warning: componentWillUpdate is deprecated"
+    ]);
+  }
+  async componentDidMount() {
+    await Font.loadAsync({
+      "ShreeDev0714-Italic": require("./src/assets/fonts/Arial.ttf") /*Fallback Font*/,
+      ShreeDev0714: require("./src/assets/fonts/Arial.ttf") /*Fallback Font*/
+    });
+
+    this.setState({ fontLoaded: true });
+    console.warn("Fallback font is being used. Please check App.js file.");
+  }
+  render() {
+    return this.state.fontLoaded ? <StackNavigation /> : <Expo.AppLoading />;
+  }
+}
