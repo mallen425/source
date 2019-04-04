@@ -8,7 +8,7 @@ export default class App extends React.Component {
       <View name="blankie" style={{height: 400}}></View>
       <View name="container" style={{flex: 1, flexDirection: 'row'}}>
           <View style={{width: 300}} name="leftie">
-            <Text style={styles.biggie}>FooBar</Text>
+            <Text style={styles.biggie}>Foo Bar</Text>
             <TextInput style={styles.biggie} placeholder="foo"></TextInput>
           </View>
           <View style={{width: 50}} name="rightie">
