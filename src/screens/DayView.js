@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import DateNavigation from "../symbols/DateNavigation";
+import TopNav from "../symbols/TopNav";
 import { Center } from "@builderx/utils";
+import SideNav from "../symbols/SideNav";
 import { View, Text, StyleSheet } from "react-native";
 
-export default class TodayView extends Component {
+export default class DayView extends Component {
   render() {
-    const {navigate} = this.props.navigation;
+    const { navigate } = this.props.navigation;
 
     return (
       <View style={styles.root}>
         <Text style={styles.greeting}>good morning!</Text>
-        <Text style={styles.style}>?</Text>
-        <Text style={styles.r}>R</Text>
-        <Text style={styles.s} onPress={() => console.warn('foo')}>SSSSSSSSSSS</Text>
         <Text style={styles.c}>C</Text>
         <Text style={styles.c1}>C</Text>
         <Text style={styles.c2}>C</Text>
@@ -34,8 +32,11 @@ export default class TodayView extends Component {
         <Text style={styles.c18}>C</Text>
         <Text style={styles.c19}>C</Text>
         <Center horizontal>
-          <DateNavigation style={styles.dateNavigation} />
+          <TopNav           style={styles.TopNav}
+          navigation={this.props.navigation}
+ />
         </Center>
+        <SideNav style={styles.sideNav} navigation={this.props.navigation} />
       </View>
     );
   }
@@ -57,40 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontFamily: "ArialMT"
   },
-  style: {
-    position: "absolute",
-    top: "21.74%",
-    left: "6.13%",
-    height: "4.05%",
-    width: "8.53%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 20,
-    fontFamily: "ArialMT"
-  },
-  r: {
-    position: "absolute",
-    top: "29.84%",
-    left: "5.33%",
-    height: "4.05%",
-    width: "10.40%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 20,
-    fontFamily: "ArialMT"
-  },
-  s: {
-    position: "absolute",
-    top: "37.93%",
-    left: "8.93%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 20,
-    fontFamily: "ArialMT"
-  },
+
   c: {
     position: "absolute",
     top: "88.91%",
@@ -293,10 +261,17 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: "ArialMT"
   },
-  dateNavigation: {
+  TopNav: {
     top: 124.5,
     width: 217,
     height: 27,
+    position: "absolute"
+  },
+  sideNav: {
+    top: 65,
+    left: 14,
+    width: 39,
+    height: 150,
     position: "absolute"
   }
 });

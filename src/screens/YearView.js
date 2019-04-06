@@ -1,21 +1,28 @@
 import React, { Component } from "react";
-import DateNavigation from "../symbols/DateNavigation";
-import { View, Text, StyleSheet } from "react-native";
+import TopNav from "../symbols/TopNav";
+import SideNav from "../symbols/SideNav";
+import { View, StyleSheet } from "react-native";
+import { withNavigationFocus } from "react-navigation";
 
-export default class YearView extends Component {
+class YearView extends Component {
   render() {
-    const {navigate} = this.props.navigation;
-
+    //const navigate  = this.props.navigation;
+    if (this.props.navigation.isFocused) console.warn("Year");
     return (
       <View style={styles.root}>
-        <Text style={styles.style}>?</Text>
-        <Text style={styles.r}>R</Text>
-        <Text style={styles.s} onPress={() => navigate('MonthView', {})}>SSSSSSSSSSS</Text>
-        <DateNavigation style={styles.dateNavigation} navigation={this.props.navigation} />
+        <SideNav style={styles.sideNav} navigation={this.props.navigation} />
+        {this.props.navigation.isFocused}
+        <TopNav
+          style={styles.TopNav}
+          navigation={this.props.navigation}
+        />
       </View>
     );
   }
 }
+
+export default withNavigationFocus(YearView);
+
 const styles = StyleSheet.create({
   root: {
     backgroundColor: "white",
@@ -33,45 +40,18 @@ const styles = StyleSheet.create({
     fontFamily: "ArialMT"
   },
 
-  style: {
-    position: "absolute",
-    top: "7.95%",
-    left: "4.53%",
-    height: "4.05%",
-    width: "8.53%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 20,
-    fontFamily: "ArialMT"
-  },
-  r: {
-    position: "absolute",
-    top: "16.04%",
-    left: "3.73%",
-    height: "4.05%",
-    width: "10.40%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 20,
-    fontFamily: "ArialMT"
-  },
-  s: {
-    position: "absolute",
-    top: "24.14%",
-    left: "7.33%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 20,
-    fontFamily: "ArialMT"
-  },
-  dateNavigation: {
+  TopNav: {
     top: 52,
     left: 72,
     width: 218,
     height: 27,
     position: "absolute"
+  },
+  sideNav: {
+    position: "absolute",
+    top: 65,
+    left: 14,
+    height: 150,
+    width: 39
   }
 });

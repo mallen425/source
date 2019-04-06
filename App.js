@@ -1,12 +1,18 @@
 import React from "react";
+import { Provider } from "react-redux";
+import store from "./src/js/store/index";
 import { YellowBox } from "react-native";
 import { Font } from "expo";
 import YearView from "./src/screens/YearView";
 import MonthView from "./src/screens/MonthView";
 import WeekView from "./src/screens/WeekView";
-import TodayView from "./src/screens/TodayView";
+import DayView from "./src/screens/DayView";
 
-import { StackNavigator, DrawerNavigator, createAppContainer } from "react-navigation";
+import {
+  StackNavigator,
+  DrawerNavigator,
+  createAppContainer
+} from "react-navigation";
 const DrawerNavigation = DrawerNavigator({
   YearView: {
     screen: YearView
@@ -17,11 +23,10 @@ const DrawerNavigation = DrawerNavigator({
   WeekView: {
     screen: WeekView
   },
-  TodayView: {
-    screen: TodayView
+  DayView: {
+    screen: DayView
   }
 });
-
 
 const StackNavigation = StackNavigator(
   {
@@ -37,8 +42,8 @@ const StackNavigation = StackNavigator(
     WeekView: {
       screen: WeekView
     },
-    TodayView: {
-      screen: TodayView
+    DayView: {
+      screen: DayView
     }
   },
   {
@@ -59,17 +64,18 @@ export default class App extends React.Component {
   }
   async componentDidMount() {
     await Font.loadAsync({
-      "ShreeDev0714-Italic": require("./src/assets/fonts/Arial.ttf") /*Fallback Font*/,
-      ShreeDev0714: require("./src/assets/fonts/Arial.ttf") /*Fallback Font*/,
       ArialMT: require("./src/assets/fonts/Arial.ttf")
     });
 
     this.setState({ fontLoaded: true });
-    console.warn("Fallback font is being used. Please check App.js file.");
   }
   render() {
-    return this.state.fontLoaded ? <StackNavigation /> : <Expo.AppLoading />;
+    return (
+    <Provider store={store}>
+    { this.state.fontLoaded ? 
+    <StackNavigation/> : <Expo.AppLoading />}
+    </Provider>
+    
+    );
   }
 }
-
-

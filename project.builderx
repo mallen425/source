@@ -3,10 +3,11 @@
         "/src/screens/YearView.js",
         "/src/screens/MonthView.js",
         "/src/screens/WeekView.js",
-        "/src/screens/TodayView.js"
+        "/src/screens/DayView.js"
     ],
     "symbols": [
-        "/src/symbols/DateNavigation.js"
+        "/src/symbols/TopNav.js",
+        "/src/symbols/SideNav.js"
     ],
     "assets": [],
     "defaultArtboardDirectory": "/src/screens",
