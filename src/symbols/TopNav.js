@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { createStackNavigator, createAppContainer } from "react-navigation";
 
-
 export default class TopNav extends Component {
   // Only for displaying symbol in BuilderX.
   static containerStyle = {
@@ -13,22 +12,42 @@ export default class TopNav extends Component {
     let routeName = this.props.navigation.state.routeName;
     return (
       <View style={[styles.root, this.props.style]}>
-        
-        <Text style={[styles.today, , (routeName === "DayView" && styles.underline)]}
-                  onPress={() => routeName === "DayView" ? false : this.props.navigation.navigate("DayView", {})}
-                  >today</Text>
         <Text
-          style={[styles.month, (routeName === "MonthView" && styles.underline)]}
-          onPress={() => routeName === "MonthView" ? false : this.props.navigation.navigate("MonthView", {})}
-          >
+          style={[styles.today, , routeName === "DayView" && styles.underline]}
+          onPress={() =>
+            routeName === "DayView"
+              ? false
+              : this.props.navigation.navigate("DayView", {})}
+        >
+          today
+        </Text>
+        <Text
+          style={[styles.month, routeName === "MonthView" && styles.underline]}
+          onPress={() =>
+            routeName === "MonthView"
+              ? false
+              : this.props.navigation.navigate("MonthView", {})}
+        >
           month
         </Text>
-        <Text style={[styles.week, (routeName === "WeekView" && styles.underline)]}
-                  onPress={() => routeName === "WeekView" ? false : this.props.navigation.navigate("WeekView", {})}
-                  >week</Text>
-        <Text style={[styles.year, (routeName === "YearView" && styles.underline)]}
-                  onPress={() => routeName === "YearView" ? false : this.props.navigation.navigate("YearView", {})}
-                  >year</Text>
+        <Text
+          style={[styles.week, routeName === "WeekView" && styles.underline]}
+          onPress={() =>
+            routeName === "WeekView"
+              ? false
+              : this.props.navigation.navigate("WeekView", {})}
+        >
+          week
+        </Text>
+        <Text
+          style={[styles.year, routeName === "YearView" && styles.underline]}
+          onPress={() =>
+            routeName === "YearView"
+              ? false
+              : this.props.navigation.navigate("YearView", {})}
+        >
+          year
+        </Text>
       </View>
     );
   }

@@ -11,32 +11,16 @@ export default class DayView extends Component {
     return (
       <View style={styles.root}>
         <Text style={styles.greeting}>good morning!</Text>
-        <Text style={styles.c}>C</Text>
-        <Text style={styles.c1}>C</Text>
-        <Text style={styles.c2}>C</Text>
-        <Text style={styles.c3}>C</Text>
-        <Text style={styles.c4}>C</Text>
-        <Text style={styles.c5}>C</Text>
-        <Text style={styles.c6}>C</Text>
-        <Text style={styles.c7}>C</Text>
-        <Text style={styles.c8}>C</Text>
-        <Text style={styles.c9}>C</Text>
-        <Text style={styles.c10}>C</Text>
-        <Text style={styles.c11}>C</Text>
-        <Text style={styles.c12}>C</Text>
-        <Text style={styles.c13}>C</Text>
-        <Text style={styles.c14}>C</Text>
-        <Text style={styles.c15}>C</Text>
-        <Text style={styles.c16}>C</Text>
-        <Text style={styles.c17}>C</Text>
-        <Text style={styles.c18}>C</Text>
-        <Text style={styles.c19}>C</Text>
         <Center horizontal>
-          <TopNav           style={styles.TopNav}
-          navigation={this.props.navigation}
- />
+          <TopNav style={styles.TopNav} navigation={this.props.navigation} />
         </Center>
         <SideNav style={styles.sideNav} navigation={this.props.navigation} />
+        <View style={styles.moods} />
+        <View style={styles.factors} />
+        <View style={styles.factorChoices}>
+          <Text style={styles.add}>+</Text>
+          <Text style={styles.c}>C</Text>
+        </View>
       </View>
     );
   }
@@ -59,208 +43,6 @@ const styles = StyleSheet.create({
     fontFamily: "ArialMT"
   },
 
-  c: {
-    position: "absolute",
-    top: "88.91%",
-    left: "24.00%",
-    height: "4.80%",
-    width: "10.67%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c1: {
-    position: "absolute",
-    top: "88.91%",
-    left: "67.73%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c2: {
-    position: "absolute",
-    top: "81.86%",
-    left: "67.73%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c3: {
-    position: "absolute",
-    top: "81.86%",
-    left: "54.13%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c4: {
-    position: "absolute",
-    top: "81.86%",
-    left: "40.53%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c5: {
-    position: "absolute",
-    top: "81.86%",
-    left: "26.93%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c6: {
-    position: "absolute",
-    top: "88.91%",
-    left: "54.13%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c7: {
-    position: "absolute",
-    top: "74.81%",
-    left: "67.73%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c8: {
-    position: "absolute",
-    top: "74.81%",
-    left: "54.13%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c9: {
-    position: "absolute",
-    top: "74.81%",
-    left: "40.53%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c10: {
-    position: "absolute",
-    top: "74.81%",
-    left: "26.93%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c11: {
-    position: "absolute",
-    top: "88.91%",
-    left: "40.53%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c12: {
-    position: "absolute",
-    top: "67.77%",
-    left: "67.73%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c13: {
-    position: "absolute",
-    top: "88.91%",
-    left: "81.33%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c14: {
-    position: "absolute",
-    top: "81.86%",
-    left: "81.33%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c15: {
-    position: "absolute",
-    top: "74.81%",
-    left: "81.33%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c16: {
-    position: "absolute",
-    top: "67.77%",
-    left: "81.33%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c17: {
-    position: "absolute",
-    top: "67.77%",
-    left: "54.13%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c18: {
-    position: "absolute",
-    top: "67.77%",
-    left: "40.53%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
-  c19: {
-    position: "absolute",
-    top: "67.77%",
-    left: "26.93%",
-    backgroundColor: "transparent",
-    textAlign: "center",
-    color: "rgba(0,0,0,1)",
-    fontSize: 24,
-    fontFamily: "ArialMT"
-  },
   TopNav: {
     top: 124.5,
     width: 217,
@@ -273,5 +55,56 @@ const styles = StyleSheet.create({
     width: 39,
     height: 150,
     position: "absolute"
+  },
+  moods: {
+    height: 57,
+    width: 242,
+    top: 220,
+    left: 80,
+    position: "absolute",
+    backgroundColor: "rgb(230,230,230)",
+    borderWidth: 1,
+    borderColor: "rgba(0,0,0,1)"
+  },
+  factors: {
+    top: 295,
+    width: 242,
+    height: 198.96,
+    position: "absolute",
+    backgroundColor: "rgb(230,230,230)",
+    borderWidth: 1,
+    borderColor: "rgba(0,0,0,1)",
+    left: "21.87%"
+  },
+  factorChoices: {
+    height: 205,
+    width: 236,
+    top: 512,
+    left: 88,
+    position: "absolute",
+    backgroundColor: "rgb(230,230,230)",
+    borderWidth: 1,
+    borderColor: "green"
+  },
+  c: {
+    top: 20.17,
+    left: 53.11,
+    width: 40,
+    height: 40,
+    position: "absolute",
+    backgroundColor: "transparent",
+    fontSize: 24,
+    fontFamily: "ArialMT",
+    textAlign: "center",
+    color: "rgba(0,0,0,1)"
+  },
+  add: {
+    top: 11,
+    left: 116,
+    width: 23,
+    height: 39,
+    position: "absolute",
+    backgroundColor: "transparent",
+    fontSize: 39
   }
 });

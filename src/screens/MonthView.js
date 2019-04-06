@@ -8,9 +8,15 @@ export default class MonthView extends Component {
   render() {
     return (
       <View style={styles.root}>
-        <TopNav style={styles.TopNav} navigation={this.props.navigation}/>
+        <TopNav style={styles.TopNav} navigation={this.props.navigation} />
         <Text style={styles.monthName}>S E P T E M B E R</Text>
         <SideNav style={styles.sideNav} navigation={this.props.navigation} />
+        <View style={styles.dayList}>
+          <View style={styles.dayRow}>
+            <View style={styles.daySummary} />
+            <Text style={styles.day}>1</Text>
+          </View>
+        </View>
       </View>
     );
   }
@@ -47,5 +53,36 @@ const styles = StyleSheet.create({
     width: 39,
     height: 150,
     position: "absolute"
+  },
+  dayList: {
+    height: 615.89,
+    width: 174,
+    top: 115,
+    left: 89,
+    position: "absolute",
+    backgroundColor: "rgb(230,230,230)"
+  },
+  dayRow: {
+    top: 31,
+    left: 29,
+    width: 126,
+    height: 31,
+    position: "absolute"
+  },
+  daySummary: {
+    top: 0,
+    left: 16,
+    width: 110,
+    height: 31,
+    position: "absolute",
+    backgroundColor: "rgb(230,230,230)",
+    borderWidth: 1,
+    borderColor: "rgba(0,0,0,1)"
+  },
+  day: {
+    top: 9,
+    left: 0,
+    position: "absolute",
+    backgroundColor: "transparent"
   }
 });

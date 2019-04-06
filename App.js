@@ -71,11 +71,9 @@ export default class App extends React.Component {
   }
   render() {
     return (
-    <Provider store={store}>
-    { this.state.fontLoaded ? 
-    <StackNavigation/> : <Expo.AppLoading />}
-    </Provider>
-    
+      <Provider store={store}>
+        {this.state.fontLoaded ? <StackNavigation /> : <Expo.AppLoading />}
+      </Provider>
     );
   }
 }
